@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter/services.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     return Scaffold(
       // appBar: AppBar(
       //   title: Text(widget.title),
